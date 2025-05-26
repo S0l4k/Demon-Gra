@@ -1,0 +1,576 @@
+fileFormatVersion: 2
+guid: ac3c1e7881c85ef45a90f77ae808ec53
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8443406586043458668
+    second: Atak _pazury__0
+  - first:
+      213: 8994257878294587736
+    second: Atak _pazury__1
+  - first:
+      213: -5030132833891205506
+    second: Atak _pazury__2
+  - first:
+      213: -2208263812869900351
+    second: Atak _pazury__3
+  - first:
+      213: 1480992309909664039
+    second: Atak _pazury__4
+  - first:
+      213: 3189829842044580255
+    second: Atak _pazury__5
+  - first:
+      213: -2515583371047337810
+    second: Atak _pazury__6
+  - first:
+      213: 7659081375523252595
+    second: Atak _pazury__7
+  - first:
+      213: 2120211519562733943
+    second: Atak _pazury__8
+  - first:
+      213: -8907262781304571444
+    second: Atak _pazury__9
+  - first:
+      213: -8992099068913278565
+    second: Atak _pazury__10
+  - first:
+      213: 7403615285071134348
+    second: Atak _pazury__11
+  - first:
+      213: 2401535756227148141
+    second: Atak _pazury__12
+  - first:
+      213: 1934975098085868354
+    second: Atak _pazury__13
+  - first:
+      213: 2498303163782555186
+    second: Atak _pazury__14
+  - first:
+      213: -7722862930628988255
+    second: Atak _pazury__15
+  - first:
+      213: -6774709240138423729
+    second: Atak _pazury__16
+  - first:
+      213: 8313634692895447504
+    second: Atak _pazury__17
+  - first:
+      213: 4067109736696021060
+    second: Atak _pazury__18
+  - first:
+      213: 7181816730342638256
+    second: Atak _pazury__19
+  - first:
+      213: -8844376996807513598
+    second: Atak _pazury__20
+  - first:
+      213: -5096371068396450771
+    second: Atak _pazury__21
+  - first:
+      213: 6179022346053287980
+    second: Atak _pazury__22
+  - first:
+      213: -9016436684404750137
+    second: Atak _pazury__23
+  - first:
+      213: 954125855675530887
+    second: Atak _pazury__24
+  - first:
+      213: -6223215628311245611
+    second: Atak _pazury__25
+  - first:
+      213: 252012142738544859
+    second: Atak _pazury__26
+  - first:
+      213: -651558604916491431
+    second: Atak _pazury__27
+  - first:
+      213: 7499673838588841171
+    second: Atak _pazury__28
+  - first:
+      213: -4733019625399257892
+    second: Atak _pazury__29
+  - first:
+      213: 1902707470582054324
+    second: Atak _pazury__30
+  - first:
+      213: 9057020233594610327
+    second: Atak _pazury__31
+  - first:
+      213: -7317585874893875481
+    second: Atak _pazury__32
+  - first:
+      213: 1077607867008288010
+    second: Atak _pazury__33
+  - first:
+      213: -4376850738325740052
+    second: Atak _pazury__34
+  - first:
+      213: -6177233698171877383
+    second: Atak _pazury__35
+  - first:
+      213: -4002770171190523046
+    second: Atak _pazury__36
+  - first:
+      213: -2589199399116722620
+    second: Atak _pazury__37
+  - first:
+      213: -8456646024949293156
+    second: Atak _pazury__38
+  - first:
+      213: -1443050655167989798
+    second: Atak _pazury__39
+  - first:
+      213: 7579937568837453638
+    second: Atak _pazury__40
+  - first:
+      213: 4078404265504017845
+    second: Atak _pazury__41
+  - first:
+      213: -4075856818371556863
+    second: Atak _pazury__42
+  - first:
+      213: -8056327799909901354
+    second: Atak _pazury__43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 600
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Atak _pazury__0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5760
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b9fa0f17ef2da80800000000000000
+      internalID: -8443406586043458668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atak _pazury__1
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 5760
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 859e10ef2e502dc70800000000000000
+      internalID: 8994257878294587736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atak _pazury__2
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 5760
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7eb2ee96d0613ab0800000000000000
+      internalID: -5030132833891205506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atak _pazury__3
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 5760
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c73a8713cbaa51e0800000000000000
+      internalID: -2208263812869900351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atak _pazury__4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3840
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7213043c8aa8d8410800000000000000
+      internalID: 1480992309909664039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atak _pazury__5
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3840
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f91f105475d844c20800000000000000
+      internalID: 3189829842044580255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atak _pazury__6
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3840
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea008dd804ad61dd0800000000000000
+      internalID: -2515583371047337810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atak _pazury__7
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 3840
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 379afd57ee58a4a60800000000000000
+      internalID: 7659081375523252595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atak _pazury__8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7795a38c4218c6d10800000000000000
+      internalID: 2120211519562733943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atak _pazury__9
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1920
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc9784f61bb036480800000000000000
+      internalID: -8907262781304571444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atak _pazury__10
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1920
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91ad4cf985a53380800000000000000
+      internalID: -8992099068913278565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atak _pazury__11
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 1920
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e315030eceeb660800000000000000
+      internalID: 7403615285071134348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atak _pazury__12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d697151eb08f35120800000000000000
+      internalID: 2401535756227148141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atak _pazury__13
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24382aa89996ada10800000000000000
+      internalID: 1934975098085868354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Atak _pazury__14
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 1920
+        height: 1920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2366e7aad71cba220800000000000000
+      internalID: 2498303163782555186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0b0affe77c965c14b81f597bc0b3aef3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Atak _pazury__0: -8443406586043458668
+      Atak _pazury__1: 8994257878294587736
+      Atak _pazury__10: -8992099068913278565
+      Atak _pazury__11: 7403615285071134348
+      Atak _pazury__12: 2401535756227148141
+      Atak _pazury__13: 1934975098085868354
+      Atak _pazury__14: 2498303163782555186
+      Atak _pazury__2: -5030132833891205506
+      Atak _pazury__3: -2208263812869900351
+      Atak _pazury__4: 1480992309909664039
+      Atak _pazury__5: 3189829842044580255
+      Atak _pazury__6: -2515583371047337810
+      Atak _pazury__7: 7659081375523252595
+      Atak _pazury__8: 2120211519562733943
+      Atak _pazury__9: -8907262781304571444
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
