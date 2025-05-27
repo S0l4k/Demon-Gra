@@ -4659,11 +4659,11 @@ GameObject:
   m_Component:
   - component: {fileID: 472298501}
   - component: {fileID: 472298503}
-  - component: {fileID: 472298502}
   - component: {fileID: 472298505}
   - component: {fileID: 472298504}
+  - component: {fileID: 472298506}
   m_Layer: 5
-  m_Name: HP_0
+  m_Name: HP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4685,31 +4685,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -731, y: 392}
+  m_AnchoredPosition: {x: -747, y: 349}
   m_SizeDelta: {x: 7.4518194, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &472298502
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472298500}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 676fc36cc3c78054c91475b29e4ea851, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &472298503
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4802,6 +4780,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472298500}
   m_CullTransparentMesh: 1
+--- !u!114 &472298506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472298500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19939dae453cd2d43aa33a2ac0c0d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 1135585961}
+  hpImage: {fileID: 472298504}
+  hpSprites:
+  - {fileID: 229094813, guid: 9ebcf09569c5a9c4791076ff3b7a3beb, type: 3}
+  - {fileID: 491248133, guid: 9ebcf09569c5a9c4791076ff3b7a3beb, type: 3}
+  - {fileID: 182948257, guid: 9ebcf09569c5a9c4791076ff3b7a3beb, type: 3}
+  - {fileID: -373588566, guid: 9ebcf09569c5a9c4791076ff3b7a3beb, type: 3}
+  - {fileID: -29621806, guid: 9ebcf09569c5a9c4791076ff3b7a3beb, type: 3}
+  - {fileID: 2018004295, guid: 9ebcf09569c5a9c4791076ff3b7a3beb, type: 3}
+  - {fileID: 1780053985, guid: 9ebcf09569c5a9c4791076ff3b7a3beb, type: 3}
+  - {fileID: -1395964221, guid: 9ebcf09569c5a9c4791076ff3b7a3beb, type: 3}
 --- !u!4 &478185636 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1986644473257108206, guid: 37e444b67385bfd469ab918965f1d7e3, type: 3}
@@ -10013,8 +10014,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1135585961}
-  hpFillImage: {fileID: 472298504}
-  hpAnimator: {fileID: 472298502}
+  hpImage: {fileID: 0}
+  hpSprites: []
 --- !u!1 &1135868602
 GameObject:
   m_ObjectHideFlags: 0
@@ -18747,7 +18748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8707749435530519083, guid: 668e4cefd5bd6cc4a95277f25382ca86, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.87
+      value: 8.05
       objectReference: {fileID: 0}
     - target: {fileID: 8707749435530519083, guid: 668e4cefd5bd6cc4a95277f25382ca86, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19506,6 +19507,14 @@ PrefabInstance:
     - target: {fileID: 7900909188845197444, guid: 37e444b67385bfd469ab918965f1d7e3, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139681329289028159, guid: 37e444b67385bfd469ab918965f1d7e3, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139681329289028159, guid: 37e444b67385bfd469ab918965f1d7e3, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
