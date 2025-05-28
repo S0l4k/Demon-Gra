@@ -3,68 +3,52 @@ using UnityEngine;
 public class Boss_Run : StateMachineBehaviour
 {
     public float attackRange = 2f;
-    public float normalSpeed = 2.5f;
-    public float enragedSpeed = 4f;
+    public float moveSpeed = 2.5f;
 
-    float currentSpeed;
-    Transform player;
-    Rigidbody2D rb;
-    Boss boss;
-    BossWeapon bossWeapon;
-    BossHealth bossHealth;
+    private Transform player;
+    private Rigidbody2D rb;
+    private Boss boss;
+    private BossWeapon bossWeapon;
 
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player")?.transform;
         rb = animator.GetComponent<Rigidbody2D>();
         boss = animator.GetComponent<Boss>();
         bossWeapon = animator.GetComponentInChildren<BossWeapon>();
-        bossHealth = animator.GetComponent<BossHealth>();
 
         if (bossWeapon == null)
-        {
-            Debug.LogError("BossWeapon not found! Make sure it's a child of the boss GameObject.");
-        }
-
-        currentSpeed = normalSpeed;
+            Debug.LogError("BossWeapon not found!");
     }
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        if (player == null) return;
+
         boss.LookAtPlayer();
 
-        Vector2 target = new Vector2(player.position.x, rb.position.y);
-        Vector2 newPos = Vector2.MoveTowards(rb.position, target, currentSpeed * Time.fixedDeltaTime);
-        rb.MovePosition(newPos);
+        // Ruch bossa w stronê gracza
+        Vector2 targetPosition = new Vector2(player.position.x, rb.position.y);
+        Vector2 newPosition = Vector2.MoveTowards(rb.position, targetPosition, moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(newPosition);
 
+        // Sprawdzenie odleg³oœci do ataku
         if (Vector2.Distance(player.position, rb.position) <= attackRange)
         {
-            animator.SetTrigger("attack1");
+            int attackType = Random.Range(0, 3); // 0 - normalny, 1 - teleport, 2 - kamienie
 
-            if (bossHealth.isEnraged)
+            switch (attackType)
             {
-                // losowy wybór ataku
-                int attackType = Random.Range(0, 2); // 0 lub 1
-
-                if (attackType == 0)
-                    bossWeapon.EnragedAttack();
-                else
-                    bossWeapon.EnragedAOEAttack();
-            }
-            else
-            {
-                bossWeapon.Attack();
+                case 0:
+                    bossWeapon.Attack();
+                    break;
+                case 1:
+                    bossWeapon.SpecialAttack1();
+                    break;
+                case 2:
+                    bossWeapon.SpecialAttack2();
+                    break;
             }
         }
-    }
-
-    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {
-        animator.ResetTrigger("attack1");
-    }
-
-    public void BecomeEnraged()
-    {
-        currentSpeed = enragedSpeed;
     }
 }

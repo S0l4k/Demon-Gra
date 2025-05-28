@@ -52,3 +52,6 @@ TagManager:
   - name: Enemy
     uniqueID: 3405828961
     locked: 0
+  - name: Kret
+    uniqueID: 3246387493
+    locked: 0

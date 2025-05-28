@@ -1,71 +1,139 @@
+using System.Collections;
 using UnityEngine;
 
 public class BossWeapon : MonoBehaviour
 {
     public int attackDamage = 20;
-    public int enragedAttackDamage = 35;
-    public int aoeDamage = 25;
-
-    public Vector3 attackOffset;
     public float attackRange = 1f;
-    public float aoeRange = 3f;
     public float attackCooldown = 2f;
-    private bool canAttack = true;
+    public bool canAttack = true;
     public LayerMask attackMask;
 
-    private Animator animator;
+    // Teleportacja pod gracza
+    public Transform groundCheck; // Punkt poni¿ej sceny (np. Y = -2)
+    private Vector3 hiddenPosition;
+    private bool isHidden = false;
+
+    // Kamienie spadaj¹ce z góry
+    public GameObject fallingRockPrefab;
+    public Transform[] rockSpawnPoints;
+    public int numberOfRocks = 5;
+    public float minDelayBetweenSpawns = 0.1f;
+    public float maxDelayBetweenSpawns = 0.3f;
 
     void Awake()
     {
-        animator = GetComponentInParent<Animator>();
+        if (rockSpawnPoints == null || rockSpawnPoints.Length == 0)
+        {
+            Debug.LogWarning("Nie przypisano punktów spawnu kamieni!");
+        }
     }
 
     public void Attack()
     {
         if (!canAttack) return;
         canAttack = false;
-        Invoke(nameof(ResetAttack), attackCooldown);
 
-        Vector3 pos = GetAttackPosition();
-        Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
+        Collider2D colInfo = Physics2D.OverlapCircle(transform.position + transform.right * 0.7f, attackRange, attackMask);
         if (colInfo != null)
         {
             colInfo.GetComponent<PlayerHealth>().TakeDamage(attackDamage);
         }
+
+        Invoke(nameof(ResetAttack), attackCooldown);
     }
 
-    public void EnragedAttack()
+    public void SpecialAttack1()
     {
-        Debug.Log("wkurzony");
         if (!canAttack) return;
         canAttack = false;
-        Invoke(nameof(ResetAttack), attackCooldown);
 
-        animator?.SetTrigger("attack1");
+        Debug.Log("Specjalny atak 1: Boss znika pod ziemi¹");
 
-        Vector3 pos = GetAttackPosition();
-        Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange + 0.5f, attackMask);
+        Vector3 playerPos = GetPlayerPosition();
+        hiddenPosition = new Vector3(playerPos.x, groundCheck.position.y, transform.position.z);
+        transform.position = hiddenPosition;
+
+        isHidden = true;
+
+        // Planujemy atak pojawienia siê
+        Invoke(nameof(GroundBreakAttack), 1.5f);
+    }
+
+    public void SpecialAttack2()
+    {
+        if (!canAttack) return;
+        canAttack = false;
+
+        Debug.Log("Specjalny atak 2: Kamienie z nieba!");
+
+        SpawnFallingRocks();
+
+        Invoke(nameof(ResetAttack), attackCooldown * 2);
+    }
+
+    public void GroundBreakAttack()
+    {
+        if (!isHidden)
+        {
+            Debug.LogWarning("GroundBreakAttack anulowany – boss nie jest ukryty");
+            ResetAttack();
+            return;
+        }
+
+        if (!canAttack)
+        {
+            Debug.LogWarning("GroundBreakAttack anulowany – cooldown trwa");
+            isHidden = false;
+            ResetAttack();
+            return;
+        }
+
+        Debug.Log("GroundBreakAttack: Boss wyskakuje z ziemi!");
+
+        // Wracamy na powierzchniê
+        Vector3 surfacePosition = new Vector3(hiddenPosition.x, groundCheck.position.y + 1.5f, transform.position.z);
+        transform.position = surfacePosition;
+
+        // Wykonujemy atak wrêcz
+        Collider2D colInfo = Physics2D.OverlapCircle(transform.position, attackRange, attackMask);
         if (colInfo != null)
         {
-            colInfo.GetComponent<PlayerHealth>().TakeDamage(enragedAttackDamage);
+            colInfo.GetComponent<PlayerHealth>().TakeDamage(attackDamage * 2); // mocniejszy atak przy wyjœciu
+        }
+
+        isHidden = false;
+        ResetAttack();
+    }
+
+    private void SpawnFallingRocks()
+    {
+        StartCoroutine(SpawnRocksCoroutine());
+    }
+
+    private IEnumerator SpawnRocksCoroutine()
+    {
+        for (int i = 0; i < numberOfRocks; i++)
+        {
+            if (rockSpawnPoints.Length == 0) yield break;
+
+            Transform randomSpawnPoint = rockSpawnPoints[Random.Range(0, rockSpawnPoints.Length)];
+            Instantiate(fallingRockPrefab, randomSpawnPoint.position, Quaternion.identity);
+
+            yield return new WaitForSeconds(Random.Range(minDelayBetweenSpawns, maxDelayBetweenSpawns));
         }
     }
 
-    public void EnragedAOEAttack()
+    private Vector3 GetPlayerPosition()
     {
-        Debug.Log("obszarowka");
-        if (!canAttack) return;
-        canAttack = false;
-        Invoke(nameof(ResetAttack), attackCooldown);
-
-        animator?.SetTrigger("AOE");
-
-        Vector3 pos = transform.position;
-        Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(pos, aoeRange, attackMask);
-        foreach (Collider2D player in hitPlayers)
+        Transform player = GameObject.FindGameObjectWithTag("Player")?.transform;
+        if (player == null)
         {
-            player.GetComponent<PlayerHealth>().TakeDamage(aoeDamage);
+            Debug.LogError("Nie znaleziono gracza!");
+            return transform.position;
         }
+
+        return player.position;
     }
 
     private void ResetAttack()
@@ -73,22 +141,9 @@ public class BossWeapon : MonoBehaviour
         canAttack = true;
     }
 
-    private Vector3 GetAttackPosition()
-    {
-        Vector3 pos = transform.position;
-        pos += transform.right * attackOffset.x;
-        pos += transform.up * attackOffset.y;
-        return pos;
-    }
-
     private void OnDrawGizmosSelected()
     {
-        Vector3 pos = GetAttackPosition();
-
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(pos, attackRange);
-
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, aoeRange);
+        Gizmos.DrawWireSphere(transform.position + transform.right * 0.7f, attackRange);
     }
 }
