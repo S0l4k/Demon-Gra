@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using UnityEngine;
 
 public class BossAI : MonoBehaviour
@@ -8,7 +8,7 @@ public class BossAI : MonoBehaviour
     public float special2Range = 8f;
     public float moveSpeed = 2.5f;
 
-    public float specialAttackCooldown = 5f; // Czas miêdzy specjalnymi atakami
+    public float specialAttackCooldown = 5f; 
 
     private Transform player;
     private Rigidbody2D rb;
@@ -16,7 +16,7 @@ public class BossAI : MonoBehaviour
     private BossWeapon bossWeapon;
 
     private float lastSpecialAttackTime;
-    private int lastAttackType = -1; // Zapisujemy typ poprzedniego ataku
+    private int lastAttackType = -1; 
     private bool isAttacking = false;
 
     void Start()
@@ -57,12 +57,15 @@ public class BossAI : MonoBehaviour
 
         float distanceToPlayer = Vector2.Distance(player.position, rb.position);
 
-        // Sprawdzenie odleg³oœci i wybór odpowiedniego ataku
-        if (distanceToPlayer <= meleeRange)
+        
+        if (distanceToPlayer <= meleeRange && !isAttacking)
         {
             StartCoroutine(PerformMeleeAttack());
+            return; 
         }
-        else if (distanceToPlayer <= special2Range)
+
+        
+        if (distanceToPlayer <= special2Range && !isAttacking)
         {
             int attackType = ChooseRandomSpecialAttack();
             switch (attackType)
@@ -80,11 +83,11 @@ public class BossAI : MonoBehaviour
     int ChooseRandomSpecialAttack()
     {
         int attackType;
-        // Unikamy powtórzenia tego samego ataku
+        
         do
         {
             attackType = Random.Range(0, 2);
-        } while (attackType == lastAttackType && Random.value > 0.3f); // 30% szansy na powtórzenie
+        } while (attackType == lastAttackType && Random.value > 0.3f); 
 
         lastAttackType = attackType;
         return attackType;
@@ -94,7 +97,7 @@ public class BossAI : MonoBehaviour
     {
         isAttacking = true;
         bossWeapon.Attack();
-        yield return new WaitForSeconds(0.5f); // czas trwania ataku
+        yield return new WaitForSeconds(0.5f);
         isAttacking = false;
         lastSpecialAttackTime = Time.time;
     }
@@ -104,8 +107,7 @@ public class BossAI : MonoBehaviour
         isAttacking = true;
         bossWeapon.SpecialAttack1();
 
-        // Mo¿esz spowolniæ bossa po teleportacji
-        yield return new WaitForSeconds(1.5f); // czas trwania ataku + cooldown
+        yield return new WaitForSeconds(1.5f); 
         isAttacking = false;
         lastSpecialAttackTime = Time.time;
     }
@@ -114,8 +116,22 @@ public class BossAI : MonoBehaviour
     {
         isAttacking = true;
         bossWeapon.SpecialAttack2();
-        yield return new WaitForSeconds(1.5f); // czas trwania ataku
+        yield return new WaitForSeconds(1.5f); 
         isAttacking = false;
         lastSpecialAttackTime = Time.time;
+    }
+    private void OnDrawGizmosSelected()
+    {
+        // Atak wrÄ™cz
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, meleeRange);
+
+        // Specjalny atak 1 (teleportacja / teleportacja)
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, special1Range);
+
+        // Specjalny atak 2 (kamienie)
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, special2Range);
     }
 }

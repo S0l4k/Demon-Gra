@@ -11,7 +11,7 @@ public class FallingRock : MonoBehaviour
             other.GetComponent<PlayerHealth>().TakeDamage(damage);
         }
 
-        // Opcjonalnie: efekt eksplozji lub niszczenie kamienia
+        // Opcjonalnie: efekt eksplozji lub dŸwiêk
         Destroy(gameObject);
     }
 }

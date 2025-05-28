@@ -4,35 +4,46 @@ using UnityEngine;
 public class BossWeapon : MonoBehaviour
 {
     public int attackDamage = 20;
+    public int special1Damage = 40;
     public float attackRange = 1f;
     public float attackCooldown = 2f;
+    public float delayBeforeTeleport = 1f; 
     public bool canAttack = true;
     public LayerMask attackMask;
 
-    // Teleportacja pod gracza
-    public Transform groundCheck; // Punkt poni¿ej sceny (np. Y = -2)
-    private Vector3 hiddenPosition;
-    private bool isHidden = false;
+    // Teleportacja
+    public Transform groundCheck;   
+    public Transform normalHeight;  
+    public float moveSpeed = 2f;   
 
-    // Kamienie spadaj¹ce z góry
+    private Vector3 playerPositionAtStartOfAttack;
+
+    // Kamienie spadaj¹ce
     public GameObject fallingRockPrefab;
     public Transform[] rockSpawnPoints;
     public int numberOfRocks = 5;
     public float minDelayBetweenSpawns = 0.1f;
     public float maxDelayBetweenSpawns = 0.3f;
 
+    private Animator animator;
+    private Rigidbody2D rb;
+    private Collider2D bossCollider;
+
+    public GameObject[] platformsToBreak; 
+    public float disappearTime = 10f;     
     void Awake()
     {
-        if (rockSpawnPoints == null || rockSpawnPoints.Length == 0)
-        {
-            Debug.LogWarning("Nie przypisano punktów spawnu kamieni!");
-        }
+        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        bossCollider = GetComponent<Collider2D>();
     }
 
     public void Attack()
     {
         if (!canAttack) return;
         canAttack = false;
+
+        animator.SetTrigger("Melee");
 
         Collider2D colInfo = Physics2D.OverlapCircle(transform.position + transform.right * 0.7f, attackRange, attackMask);
         if (colInfo != null)
@@ -48,16 +59,8 @@ public class BossWeapon : MonoBehaviour
         if (!canAttack) return;
         canAttack = false;
 
-        Debug.Log("Specjalny atak 1: Boss znika pod ziemi¹");
-
-        Vector3 playerPos = GetPlayerPosition();
-        hiddenPosition = new Vector3(playerPos.x, groundCheck.position.y, transform.position.z);
-        transform.position = hiddenPosition;
-
-        isHidden = true;
-
-        // Planujemy atak pojawienia siê
-        Invoke(nameof(GroundBreakAttack), 1.5f);
+        Debug.Log("Rozpoczynam specjalny atak: ukrycie pod ziemi¹");
+        animator.SetTrigger("Special1"); 
     }
 
     public void SpecialAttack2()
@@ -65,85 +68,151 @@ public class BossWeapon : MonoBehaviour
         if (!canAttack) return;
         canAttack = false;
 
-        Debug.Log("Specjalny atak 2: Kamienie z nieba!");
+        Debug.Log("Specjalny atak 2: Deszcz kamieni!");
 
-        SpawnFallingRocks();
+        animator.SetTrigger("Special2");
 
-        Invoke(nameof(ResetAttack), attackCooldown * 2);
+       
+        StartCoroutine(SpawnFallingRocks());
     }
 
-    public void GroundBreakAttack()
+
+
+   
+    public void OnUndergroundAnimationFinished()
     {
-        if (!isHidden)
+        Debug.Log("Boss koñczy animacjê schowania siê. Ruszam w dó³...");
+
+        if (bossCollider != null)
+            bossCollider.enabled = false;
+
+        StartCoroutine(MoveToGroundCheck());
+    }
+
+    private IEnumerator MoveToGroundCheck()
+    {
+        Vector3 targetPosition = new Vector3(transform.position.x, groundCheck.position.y, transform.position.z);
+
+        while ((Vector3)transform.position != targetPosition)
         {
-            Debug.LogWarning("GroundBreakAttack anulowany – boss nie jest ukryty");
-            ResetAttack();
-            return;
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+            yield return null;
         }
 
-        if (!canAttack)
-        {
-            Debug.LogWarning("GroundBreakAttack anulowany – cooldown trwa");
-            isHidden = false;
-            ResetAttack();
-            return;
-        }
+        Debug.Log("Boss dotar³ do ziemi. Czekam przed teleportacj¹...");
+        yield return new WaitForSeconds(delayBeforeTeleport);
 
-        Debug.Log("GroundBreakAttack: Boss wyskakuje z ziemi!");
+        TeleportUnderPlayer();
+    }
 
-        // Wracamy na powierzchniê
-        Vector3 surfacePosition = new Vector3(hiddenPosition.x, groundCheck.position.y + 1.5f, transform.position.z);
-        transform.position = surfacePosition;
+    private void TeleportUnderPlayer()
+    {
+        Transform player = GameObject.FindGameObjectWithTag("Player")?.transform;
+        if (player == null) return;
 
-        // Wykonujemy atak wrêcz
+        float newX = player.position.x;
+
+       
+        Vector3 newPosition = new Vector3(newX, groundCheck.position.y, transform.position.z);
+        transform.position = newPosition;
+
+        
+        animator.SetTrigger("Appear");
+    }
+
+  
+    public void OnExitGroundAttackEvent()
+    {
+        Debug.Log("Boss wyskakuje i zadaje obra¿enia!");
+
         Collider2D colInfo = Physics2D.OverlapCircle(transform.position, attackRange, attackMask);
         if (colInfo != null)
         {
-            colInfo.GetComponent<PlayerHealth>().TakeDamage(attackDamage * 2); // mocniejszy atak przy wyjœciu
+            colInfo.GetComponent<PlayerHealth>().TakeDamage(special1Damage);
         }
-
-        isHidden = false;
-        ResetAttack();
     }
 
-    private void SpawnFallingRocks()
+    
+    public void OnExitGroundAnimationFinished()
     {
-        StartCoroutine(SpawnRocksCoroutine());
+        StartCoroutine(MoveToNormalHeight());
     }
 
-    private IEnumerator SpawnRocksCoroutine()
+    private IEnumerator MoveToNormalHeight()
     {
-        for (int i = 0; i < numberOfRocks; i++)
+        Vector3 targetPosition = new Vector3(transform.position.x, normalHeight.position.y, transform.position.z);
+
+        while ((Vector3)transform.position != targetPosition)
         {
-            if (rockSpawnPoints.Length == 0) yield break;
-
-            Transform randomSpawnPoint = rockSpawnPoints[Random.Range(0, rockSpawnPoints.Length)];
-            Instantiate(fallingRockPrefab, randomSpawnPoint.position, Quaternion.identity);
-
-            yield return new WaitForSeconds(Random.Range(minDelayBetweenSpawns, maxDelayBetweenSpawns));
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+            yield return null;
         }
+
+        Debug.Log("Boss wróci³ na powierzchniê.");
+        FinalizeAttack();
     }
 
-    private Vector3 GetPlayerPosition()
+    private void FinalizeAttack()
     {
-        Transform player = GameObject.FindGameObjectWithTag("Player")?.transform;
-        if (player == null)
-        {
-            Debug.LogError("Nie znaleziono gracza!");
-            return transform.position;
-        }
+        if (bossCollider != null)
+            bossCollider.enabled = true;
 
-        return player.position;
+        canAttack = true;
     }
+
+   
 
     private void ResetAttack()
     {
         canAttack = true;
     }
 
-    private void OnDrawGizmosSelected()
+
+
+    private IEnumerator SpawnFallingRocks()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position + transform.right * 0.7f, attackRange);
+        int rockCount = Random.Range(10, 16);
+        float spawnDuration = 3f;
+        int rocksPerWave = 3;
+        float waveInterval = 0.5f;
+
+        
+        Platform chosenPlatform = null;
+
+        if (platformsToBreak.Length > 0)
+        {
+            GameObject platformGO = platformsToBreak[Random.Range(0, platformsToBreak.Length)];
+            if (platformGO != null)
+            {
+                chosenPlatform = platformGO.GetComponent<Platform>();
+                if (chosenPlatform != null)
+                {
+                    chosenPlatform.Hide();
+                }
+            }
+        }
+
+       
+        for (int wave = 0; wave < rockCount / rocksPerWave + 1; wave++)
+        {
+            for (int i = 0; i < rocksPerWave; i++)
+            {
+                if (rockSpawnPoints.Length == 0) yield break;
+
+                Transform randomSpawnPoint = rockSpawnPoints[Random.Range(0, rockSpawnPoints.Length)];
+                Instantiate(fallingRockPrefab, randomSpawnPoint.position, Quaternion.identity);
+            }
+
+            yield return new WaitForSeconds(Random.Range(0.2f, waveInterval));
+        }
+
+       
+        if (chosenPlatform != null)
+        {
+            yield return new WaitForSeconds(disappearTime);
+            chosenPlatform.Show();
+        }
+
+        ResetAttack();
     }
 }
