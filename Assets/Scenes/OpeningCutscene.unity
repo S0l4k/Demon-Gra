@@ -302,7 +302,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -1.5773773, z: 0, w: 11.231682}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -332,7 +332,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.2340088, y: -2.4670029}
+  m_AnchoredPosition: {x: -1.2340088, y: -14}
   m_SizeDelta: {x: -33.063, y: -33.751}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &13900553
@@ -1227,7 +1227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6999774212594974032, guid: 50924eb8c4ee48741b00441dfb96ba02, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -187.23
+      value: -228.52
       objectReference: {fileID: 0}
     - target: {fileID: 6999774212594974032, guid: 50924eb8c4ee48741b00441dfb96ba02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1263,7 +1263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6999774212594974032, guid: 50924eb8c4ee48741b00441dfb96ba02, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 93.61596
+      value: 114.26
       objectReference: {fileID: 0}
     - target: {fileID: 6999774212594974032, guid: 50924eb8c4ee48741b00441dfb96ba02, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1280,10 +1280,6 @@ PrefabInstance:
     - target: {fileID: 7587534078408606901, guid: 50924eb8c4ee48741b00441dfb96ba02, type: 3}
       propertyPath: m_Name
       value: Eyes
-      objectReference: {fileID: 0}
-    - target: {fileID: 7587534078408606901, guid: 50924eb8c4ee48741b00441dfb96ba02, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1386,7 +1382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2241001846005937041, guid: 64fe9b96a62a0e446bd61fa142455f69, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -187.23
+      value: -228.52
       objectReference: {fileID: 0}
     - target: {fileID: 2241001846005937041, guid: 64fe9b96a62a0e446bd61fa142455f69, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1422,7 +1418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2241001846005937041, guid: 64fe9b96a62a0e446bd61fa142455f69, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 93.61596
+      value: 114.26
       objectReference: {fileID: 0}
     - target: {fileID: 2241001846005937041, guid: 64fe9b96a62a0e446bd61fa142455f69, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1439,10 +1435,6 @@ PrefabInstance:
     - target: {fileID: 2977495318226152344, guid: 64fe9b96a62a0e446bd61fa142455f69, type: 3}
       propertyPath: m_Name
       value: People
-      objectReference: {fileID: 0}
-    - target: {fileID: 2977495318226152344, guid: 64fe9b96a62a0e446bd61fa142455f69, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1791,10 +1783,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cave
       objectReference: {fileID: 0}
-    - target: {fileID: 1363737530323278412, guid: 7db753c41f47b93469dda843fc12a8db, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7281760567760958838, guid: 7db753c41f47b93469dda843fc12a8db, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1825,7 +1813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7281760567760958838, guid: 7db753c41f47b93469dda843fc12a8db, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -187.23
+      value: -228.98
       objectReference: {fileID: 0}
     - target: {fileID: 7281760567760958838, guid: 7db753c41f47b93469dda843fc12a8db, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1861,7 +1849,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7281760567760958838, guid: 7db753c41f47b93469dda843fc12a8db, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 93.61596
+      value: 114.48999
       objectReference: {fileID: 0}
     - target: {fileID: 7281760567760958838, guid: 7db753c41f47b93469dda843fc12a8db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2147,17 +2135,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5857396030361044169, guid: 71933c9e2f50aca4abc1bc1a61c78fbe, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 1342500033211402196, guid: 609840dc232bc834ba524e6cc5794033, type: 3}
     - target: {fileID: 6616512847808286680, guid: 71933c9e2f50aca4abc1bc1a61c78fbe, type: 3}
       propertyPath: m_Name
       value: Kingdom
-      objectReference: {fileID: 0}
-    - target: {fileID: 6616512847808286680, guid: 71933c9e2f50aca4abc1bc1a61c78fbe, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

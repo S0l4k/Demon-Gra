@@ -42,4 +42,31 @@ public class ScreenFader : MonoBehaviour
             SceneManager.LoadScene(nextSceneName);
         }
     }
+    public void FadeInNoArgs() // ← do użycia w Timeline
+    {
+        StartFadeIn(1f);
+    }
+
+    public void StartFadeIn(float duration = 1f)
+    {
+        gameObject.SetActive(true);
+        StartCoroutine(FadeInCoroutine(duration));
+    }
+
+    private IEnumerator FadeInCoroutine(float duration)
+    {
+        float time = 0f;
+        canvasGroup.alpha = 1f;
+
+        while (time < duration)
+        {
+            time += Time.deltaTime;
+            canvasGroup.alpha = Mathf.Lerp(1f, 0f, time / duration);
+            yield return null;
+        }
+
+        canvasGroup.alpha = 0f;
+        gameObject.SetActive(false);
+    }
+
 }
