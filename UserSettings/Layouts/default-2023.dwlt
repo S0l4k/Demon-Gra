@@ -20,10 +20,14 @@ MonoBehaviour:
     height: 989
   m_ShowMode: 4
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Title: Hierarchy
 =======
   m_Title: Scene
 >>>>>>> Kinga
+=======
+  m_Title: Project
+>>>>>>> Łukasz
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -126,10 +130,14 @@ MonoBehaviour:
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 148
 =======
   controlID: 159
 >>>>>>> Kinga
+=======
+  controlID: 17
+>>>>>>> Łukasz
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,10 +182,14 @@ MonoBehaviour:
     y: 0
     width: 907
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 487
 =======
     height: 474
 >>>>>>> Kinga
+=======
+    height: 489
+>>>>>>> Łukasz
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
@@ -185,7 +197,7 @@ MonoBehaviour:
   - {fileID: 13}
   - {fileID: 14}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -203,9 +215,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 487
+=======
+    y: 489
+>>>>>>> Łukasz
     width: 907
-    height: 460
+    height: 458
   m_MinSize: {x: 51, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 12}
@@ -246,8 +262,8 @@ MonoBehaviour:
 <<<<<<< HEAD
     width: 308
     height: 947
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 18}
 =======
     width: 189
@@ -278,7 +294,11 @@ MonoBehaviour:
     x: 1096
     y: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 284
+=======
+    width: 285
+>>>>>>> Łukasz
     height: 947
 =======
     width: 463
@@ -307,9 +327,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1499
+=======
+    x: 1500
+>>>>>>> Łukasz
     y: 0
-    width: 421
+    width: 420
     height: 947
 =======
     x: 1559
@@ -352,8 +376,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 560
+    y: 562
     width: 906
+<<<<<<< HEAD
     height: 439
 =======
     m_Text: Game
@@ -367,6 +392,9 @@ MonoBehaviour:
     width: 906
     height: 444
 >>>>>>> Kinga
+=======
+    height: 437
+>>>>>>> Łukasz
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -386,7 +414,7 @@ MonoBehaviour:
     m_IsLocked: 0
   m_SequenceHierarchy: {fileID: 0}
   m_SequencePath:
-    m_SelectionRoot: -4712
+    m_SelectionRoot: 0
     m_SubElements: []
 =======
   m_SerializedViewNames: []
@@ -479,10 +507,14 @@ MonoBehaviour:
     y: 73
     width: 906
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 466
 =======
     height: 453
 >>>>>>> Kinga
+=======
+    height: 468
+>>>>>>> Łukasz
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1010,6 +1042,7 @@ MonoBehaviour:
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -51.686836, y: 8.724501, z: -0.62335855}
     speed: 2
     m_Value: {x: -49.109936, y: 8.285578, z: -0.59220886}
@@ -1018,6 +1051,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 31.861221, y: 11.180122, z: -0.053007066}
 >>>>>>> Kinga
+=======
+    m_Target: {x: 276.43613, y: -5.776845, z: 0.0997109}
+    speed: 2
+    m_Value: {x: 276.75262, y: -5.5122375, z: 0.09397779}
+>>>>>>> Łukasz
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1068,6 +1106,7 @@ MonoBehaviour:
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 72.33569
     speed: 2
     m_Value: 69.22076
@@ -1076,6 +1115,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 6.2868075
 >>>>>>> Kinga
+=======
+    m_Target: 12.167031
+    speed: 2
+    m_Value: 12.740347
+>>>>>>> Łukasz
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1131,7 +1175,7 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 906
-    height: 466
+    height: 465
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1147,6 +1191,7 @@ MonoBehaviour:
     m_KeySerializationHelper:
     - {fileID: 8167513711586069321, guid: 9464150b15696284390ed0cbfaa9529d, type: 2}
     - {fileID: -190790606374396871, guid: b489c2d2bd68b484e9c25072a970562f, type: 2}
+    - {fileID: -7464086513893459398, guid: 52d8ec870627c8c4dba897c8fd6bb37b, type: 2}
     m_ValueSerializationHelper:
     - e00: 0.74731183
       e01: 0
@@ -1180,10 +1225,26 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: b489c2d2bd68b484e9c25072a970562f, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 52d8ec870627c8c4dba897c8fd6bb37b, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -190790606374396871, guid: b489c2d2bd68b484e9c25072a970562f, type: 2}
+  - m_Target: {fileID: -7464086513893459398, guid: 52d8ec870627c8c4dba897c8fd6bb37b, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -1221,6 +1282,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 560
     width: 906
     height: 439
@@ -1229,6 +1291,11 @@ MonoBehaviour:
     width: 906
     height: 464
 >>>>>>> Kinga
+=======
+    y: 562
+    width: 906
+    height: 437
+>>>>>>> Łukasz
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1247,7 +1314,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 906, y: 418}
+  m_TargetSize: {x: 1920, y: 1080}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1256,16 +1323,16 @@ MonoBehaviour:
   m_VSyncEnabled: 0
   m_Gizmos: 0
   m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_SelectedSizes: 03000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -453
-    m_HBaseRangeMax: 453
-    m_VBaseRangeMin: -209
-    m_VBaseRangeMax: 209
+    m_HBaseRangeMin: -960
+    m_HBaseRangeMax: 960
+    m_VBaseRangeMin: -540
+    m_VBaseRangeMax: 540
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1284,22 +1351,22 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 906
-      height: 418
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 453, y: 209}
+      height: 416
+    m_Scale: {x: 0.38518518, y: 0.38518518}
+    m_Translation: {x: 453, y: 208}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -453
-      y: -209
-      width: 906
-      height: 418
+      x: -1176.0577
+      y: -540
+      width: 2352.1155
+      height: 1080
     m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 906, y: 439}
+  m_defaultScale: 0.38518518
+  m_LastWindowPixelSize: {x: 906, y: 437}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1327,9 +1394,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 560
+    y: 562
     width: 906
-    height: 439
+    height: 437
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1419,9 +1486,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 560
+    y: 562
     width: 906
-    height: 439
+    height: 437
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1436,7 +1503,11 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LastSelectedObjectID: 36470
+=======
+  m_LastSelectedObjectID: 77400
+>>>>>>> Łukasz
 --- !u!114 &18
 =======
   m_LastSelectedObjectID: 36572
@@ -1481,6 +1552,7 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_SelectedIDs: 98edffff
       m_LastClickedID: -4712
       m_ExpandedIDs: 4af1ffff54fafffff88e0000b693000064940000
@@ -1489,6 +1561,11 @@ MonoBehaviour:
       m_LastClickedID: 36064
       m_ExpandedIDs: c2faffffe08c0000
 >>>>>>> Kinga
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: befaffff
+>>>>>>> Łukasz
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1505,7 +1582,7 @@ MonoBehaviour:
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 9}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -1537,7 +1614,11 @@ MonoBehaviour:
     x: 3016
     y: 73
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 282
+=======
+    width: 283
+>>>>>>> Łukasz
     height: 926
 =======
     width: 461
@@ -1566,10 +1647,14 @@ MonoBehaviour:
     m_SearchArea: 1
     m_Folders:
 <<<<<<< HEAD
+<<<<<<< HEAD
     - Assets/Scenes
 =======
     - Assets/Envinment/Spikes
 >>>>>>> Kinga
+=======
+    - Assets/Pixel2DCastleTileset/Sprites/Sliced
+>>>>>>> Łukasz
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1580,7 +1665,11 @@ MonoBehaviour:
   m_StartGridSize: 64
   m_LastFolders:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - Assets/Scenes
+=======
+  - Assets/Pixel2DCastleTileset/Sprites/Sliced
+>>>>>>> Łukasz
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\lukas\Documents\GitKraken\Demon Gra\Demon Gra
 =======
@@ -1591,6 +1680,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 0}
 <<<<<<< HEAD
     m_SelectedIDs: c8910000
@@ -1601,20 +1691,26 @@ MonoBehaviour:
     m_LastClickedID: 38560
     m_ExpandedIDs: 00000000ca950000409600004896000000ca9a3bffffff7f
 >>>>>>> Kinga
+=======
+    scrollPos: {x: 0, y: 166}
+    m_SelectedIDs: 5a920000
+    m_LastClickedID: 37466
+    m_ExpandedIDs: 00000000f0900000f2900000f4900000f6900000f8900000fa900000fc900000fe90000000910000029100000491000006910000089100000a9100000c9100000e910000109100001291000000ca9a3bffffff7f
+>>>>>>> Łukasz
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Scripts
-      m_OriginalName: Scripts
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 37322
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 10}
@@ -1630,10 +1726,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 0000000044910000
 =======
     m_ExpandedIDs: 00000000ca950000
 >>>>>>> Kinga
+=======
+    m_ExpandedIDs: 00000000f0900000f2900000f4900000f6900000f8900000fa900000fc900000fe90000000910000029100000491000006910000089100000a9100000c9100000e9100001091000012910000
+>>>>>>> Łukasz
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1663,10 +1763,14 @@ MonoBehaviour:
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: 78b30000da910000
 =======
     m_ExpandedInstanceIDs: 78b3000016920000
 >>>>>>> Kinga
+=======
+    m_ExpandedInstanceIDs: 78b30000da910000de0c0100e2ee000002990000249900009031ffffb2a80000e292000022970000629b0000
+>>>>>>> Łukasz
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1722,9 +1826,13 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 1499
+=======
+    x: 1500
+>>>>>>> Łukasz
     y: 73
-    width: 420
+    width: 419
     height: 926
 =======
     x: 3479
