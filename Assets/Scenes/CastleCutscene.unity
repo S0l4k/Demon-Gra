@@ -1605,8 +1605,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -711, y: -154}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -689.80725, y: -154}
+  m_SizeDelta: {x: 242.3855, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1133523683
 MonoBehaviour:
@@ -2774,9 +2774,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6591702972330203492, guid: c916b032c947ed94398a84fddbb2c250, type: 3}
+      propertyPath: m_Size.x
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591702972330203492, guid: c916b032c947ed94398a84fddbb2c250, type: 3}
+      propertyPath: m_Size.y
+      value: 8.003906
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591702972330203492, guid: c916b032c947ed94398a84fddbb2c250, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300098, guid: e3b50334692f8f544b001d8a0536b61a, type: 3}
+      objectReference: {fileID: 21300084, guid: 6f9abc8f092972e4596a62b9d031f99e, type: 3}
+    - target: {fileID: 6591702972330203492, guid: c916b032c947ed94398a84fddbb2c250, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
