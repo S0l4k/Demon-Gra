@@ -29,15 +29,20 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        PlayHurtSound();
-        if (!canMove) return;
+        if (!canMove || currentHealth <= 0)
+            return;
 
         currentHealth -= damage;
-        anim.SetTrigger("Hurt");
 
         if (currentHealth <= 0)
         {
+            currentHealth = 0;
             Die();
+        }
+        else
+        {
+            PlayHurtSound();
+            anim.SetTrigger("Hurt");
         }
     }
 

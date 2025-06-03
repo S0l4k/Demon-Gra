@@ -4,27 +4,17 @@ using UnityEngine.UI;
 public class HealthUI : MonoBehaviour
 {
     public PlayerHealth playerHealth;
-    public Image hpFillImage;
-    public Animator hpAnimator;
+    public Image hpImage;
+    public Sprite[] hpSprites;
 
     void Update()
     {
-        if (playerHealth != null && hpFillImage != null)
-        {
-            float fill = (float)playerHealth.currentHealth / playerHealth.maxHealth;
-            hpFillImage.fillAmount = fill;
+        if (playerHealth == null || hpImage == null || hpSprites == null || hpSprites.Length != 8)
+            return;
 
-            //Debug.Log("HP fill: " + fill);
+        float hpPercent = (float)playerHealth.currentHealth / playerHealth.maxHealth;
+        int spriteIndex = Mathf.Clamp(Mathf.FloorToInt(hpPercent * 8), 0, 7);
 
-            if (hpAnimator != null)
-            {
-                hpAnimator.SetFloat("HP", fill);
-                //Debug.Log("Animator HP parameter: " + fill);
-            }
-            else
-            {
-                Debug.LogWarning("HP animacja jest pusta");
-            }
-        }
+        hpImage.sprite = hpSprites[7 - spriteIndex];
     }
 }

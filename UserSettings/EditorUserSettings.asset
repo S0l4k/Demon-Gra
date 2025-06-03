@@ -24,6 +24,7 @@ EditorUserSettings:
       value: 515250075c0c595e5f5a5e71122159444e4e4a2f7a7d7f602f284d66b4b76661
       flags: 0
     RecentlyUsedSceneGuid-6:
+<<<<<<< HEAD
       value: 5b01040255050b5a5e085e2443775944434e482e2f2c75347a2d4f65b6b53060
       flags: 0
     RecentlyUsedSceneGuid-7:
@@ -33,6 +34,8 @@ EditorUserSettings:
       value: 52575504570c5b0a5858082140775a44434f482b7a7a25692c791e62e7e2316f
       flags: 0
     RecentlyUsedSceneGuid-9:
+=======
+>>>>>>> origin/Kinga
       value: 555400545c56085d0c5b592748225b4445151d7a287020622b284a31e1e1316d
       flags: 0
     vcSharedLogLevel:
