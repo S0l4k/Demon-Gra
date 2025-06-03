@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      KingdomSkibid_0: 1342500033211402196
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

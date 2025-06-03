@@ -30,7 +30,11 @@ MonoBehaviour:
   controlID: 17
 =======
   controlID: 27
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -193,7 +197,11 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
   m_EditorHideFlags: 1
   m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -214,7 +222,11 @@ MonoBehaviour:
     height: 466
 =======
     height: 460
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -749,7 +761,11 @@ MonoBehaviour:
     m_Target: {x: -36.27693, y: -0.8110596, z: 0.120559506}
     speed: 2
     m_Value: {x: -35.815594, y: -0.613343, z: 0.11635316}
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -807,7 +823,11 @@ MonoBehaviour:
     m_Target: 8.926749
     speed: 2
     m_Value: 9.347382
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1021,7 +1041,11 @@ MonoBehaviour:
 =======
   m_EditorHideFlags: 0
   m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
   m_Name: 
   m_EditorClassIdentifier: 
   m_MinSize: {x: 50, y: 50}
@@ -1042,7 +1066,11 @@ MonoBehaviour:
     y: 73
     width: 906
     height: 464
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1183,7 +1211,11 @@ MonoBehaviour:
   - {fileID: 8}
   m_Selected: 0
   m_LastSelected: 1
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1264,7 +1296,11 @@ MonoBehaviour:
 =======
   m_LastSelectedObjectID: 49250
 --- !u!114 &9
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1337,7 +1373,11 @@ MonoBehaviour:
       m_SelectedIDs: 90960000
       m_LastClickedID: 0
       m_ExpandedIDs: bcefffffc2faffff
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1385,7 +1425,11 @@ MonoBehaviour:
 =======
     width: 394
     height: 939
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 13}
@@ -1422,7 +1466,11 @@ MonoBehaviour:
 =======
     width: 392
     height: 918
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1449,7 +1497,11 @@ MonoBehaviour:
     - Assets
 =======
     - Assets/Scenes
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1467,7 +1519,11 @@ MonoBehaviour:
   - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\Ki\u0144\\Documents\\GitKraken\\Demon-Gra"
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
@@ -1480,7 +1536,11 @@ MonoBehaviour:
     m_SelectedIDs: 5c960000
     m_LastClickedID: 38492
     m_ExpandedIDs: 00000000d695000000ca9a3bffffff7f
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1513,7 +1573,11 @@ MonoBehaviour:
     m_ExpandedIDs: 00000000d4900000
 =======
     m_ExpandedIDs: 00000000d6950000
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1545,7 +1609,11 @@ MonoBehaviour:
 =======
     m_SelectedInstanceIDs: 90960000
     m_LastClickedInstanceID: 38544
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 78b30000da910000
     m_RenameOverlay:
@@ -1581,7 +1649,11 @@ MonoBehaviour:
 =======
   m_DirectoriesAreaWidth: 156
 --- !u!114 &13
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1604,7 +1676,11 @@ MonoBehaviour:
 =======
     width: 430
     height: 939
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
@@ -1643,7 +1719,11 @@ MonoBehaviour:
     y: 73
     width: 429
     height: 918
+<<<<<<< HEAD
 >>>>>>> Kinga
+=======
+>>>>>>> origin/Kinga
+>>>>>>> Łukasz
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
