@@ -167,6 +167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &764708
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -572,6 +573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &18873812
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -990,6 +992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &52931984
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1594,6 +1597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &102171735
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1747,6 +1751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &108468062
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1895,6 +1900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &109256364
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2360,6 +2366,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &152641879
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2508,6 +2515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &160473706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2634,7 +2642,7 @@ Transform:
   m_GameObject: {fileID: 164775205}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.43, y: -3.9755769, z: -9.994068}
+  m_LocalPosition: {x: -38.43, y: -3.7855768, z: -9.994068}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2927,6 +2935,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &216150452
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3985,6 +3994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &296050152
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4266,6 +4276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &312860291
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4701,6 +4712,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &329674199
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5086,6 +5098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &335876567
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5976,6 +5989,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &411699884
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6523,6 +6537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &440153077
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6682,7 +6697,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7408645021715533602, guid: 8bcfa523fc066834586d1ef4d7f68469, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8bcfa523fc066834586d1ef4d7f68469, type: 3}
 --- !u!1 &452865108 stripped
 GameObject:
@@ -6747,6 +6765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &460458016
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7412,6 +7431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &474163116
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8102,7 +8122,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.43, y: -3.9755769, z: -9.994068}
+  m_LocalPosition: {x: -38.43, y: -3.7855768, z: -9.994068}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8154,7 +8174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9372d41635122bb44b0e23ecb06b44fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oldPosition: -43.8
 --- !u!1 &523240366
 GameObject:
   m_ObjectHideFlags: 0
@@ -8534,6 +8553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &545469344
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8800,6 +8820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &573788069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9138,6 +9159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &583574996
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10086,6 +10108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &632066148
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10667,64 +10690,68 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8369383532742148375, guid: 5fd9ed34f1f755643b41c4b41d7077e5, type: 3}
+    - target: {fileID: 544718634011502089, guid: be9b0c58dcb6c044a8710097c2d3abd0, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5995435572226499770, guid: be9b0c58dcb6c044a8710097c2d3abd0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 283.40698
+      value: 282.74
       objectReference: {fileID: 0}
-    - target: {fileID: 8369383532742148375, guid: 5fd9ed34f1f755643b41c4b41d7077e5, type: 3}
+    - target: {fileID: 5995435572226499770, guid: be9b0c58dcb6c044a8710097c2d3abd0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.61
+      value: -2.46
       objectReference: {fileID: 0}
-    - target: {fileID: 8369383532742148375, guid: 5fd9ed34f1f755643b41c4b41d7077e5, type: 3}
+    - target: {fileID: 5995435572226499770, guid: be9b0c58dcb6c044a8710097c2d3abd0, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8369383532742148375, guid: 5fd9ed34f1f755643b41c4b41d7077e5, type: 3}
+    - target: {fileID: 5995435572226499770, guid: be9b0c58dcb6c044a8710097c2d3abd0, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8369383532742148375, guid: 5fd9ed34f1f755643b41c4b41d7077e5, type: 3}
+    - target: {fileID: 5995435572226499770, guid: be9b0c58dcb6c044a8710097c2d3abd0, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8369383532742148375, guid: 5fd9ed34f1f755643b41c4b41d7077e5, type: 3}
+    - target: {fileID: 5995435572226499770, guid: be9b0c58dcb6c044a8710097c2d3abd0, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8369383532742148375, guid: 5fd9ed34f1f755643b41c4b41d7077e5, type: 3}
+    - target: {fileID: 5995435572226499770, guid: be9b0c58dcb6c044a8710097c2d3abd0, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8369383532742148375, guid: 5fd9ed34f1f755643b41c4b41d7077e5, type: 3}
+    - target: {fileID: 5995435572226499770, guid: be9b0c58dcb6c044a8710097c2d3abd0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8369383532742148375, guid: 5fd9ed34f1f755643b41c4b41d7077e5, type: 3}
+    - target: {fileID: 5995435572226499770, guid: be9b0c58dcb6c044a8710097c2d3abd0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8369383532742148375, guid: 5fd9ed34f1f755643b41c4b41d7077e5, type: 3}
+    - target: {fileID: 5995435572226499770, guid: be9b0c58dcb6c044a8710097c2d3abd0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8369383532742148377, guid: 5fd9ed34f1f755643b41c4b41d7077e5, type: 3}
+    - target: {fileID: 3081077086426018249, guid: be9b0c58dcb6c044a8710097c2d3abd0, type: 3}
       propertyPath: m_Name
-      value: NextLevel
+      value: Square
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8369383532742148377, guid: 5fd9ed34f1f755643b41c4b41d7077e5, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 3081077086426018249, guid: be9b0c58dcb6c044a8710097c2d3abd0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 663233723}
-    - targetCorrespondingSourceObject: {fileID: 8369383532742148377, guid: 5fd9ed34f1f755643b41c4b41d7077e5, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 3081077086426018249, guid: be9b0c58dcb6c044a8710097c2d3abd0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 663233725}
-  m_SourcePrefab: {fileID: 100100000, guid: 5fd9ed34f1f755643b41c4b41d7077e5, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: be9b0c58dcb6c044a8710097c2d3abd0, type: 3}
 --- !u!1 &663233722 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8369383532742148377, guid: 5fd9ed34f1f755643b41c4b41d7077e5, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3081077086426018249, guid: be9b0c58dcb6c044a8710097c2d3abd0, type: 3}
   m_PrefabInstance: {fileID: 663233721}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &663233723
@@ -10778,11 +10805,11 @@ BoxCollider2D:
   m_Offset: {x: -1.9491425, y: 1.0571654}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.06, y: 1.82}
+    newSize: {x: 10, y: 10}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 1
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Size: {x: 4.898285, y: 3.1143308}
@@ -11382,6 +11409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &720747073
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11926,6 +11954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &772994740
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12074,6 +12103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &777124494
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12308,6 +12338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &793821596
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13214,6 +13245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &852352451
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13453,6 +13485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &866335052
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14528,6 +14561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &937669060
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15125,6 +15159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &985252604
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15406,6 +15441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &989502552
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16079,6 +16115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1036798831
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16284,6 +16321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1065999708
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17218,7 +17256,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7408645021715533602, guid: 8bcfa523fc066834586d1ef4d7f68469, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8bcfa523fc066834586d1ef4d7f68469, type: 3}
 --- !u!1 &1143399416
 GameObject:
@@ -17268,6 +17309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1143399419
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18024,6 +18066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1184125938
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18233,6 +18276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1198154130
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18441,8 +18485,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8e38e51b82abe149bb192a7857f865b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxCamera: {fileID: 519420034}
-  parallaxLayers: []
 --- !u!1 &1208506653
 GameObject:
   m_ObjectHideFlags: 0
@@ -18491,6 +18533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1208506656
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19723,7 +19766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4318192751392447923, guid: aea2993f512271844bf46c4cd2eb270b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.9
+      value: -2.71
       objectReference: {fileID: 0}
     - target: {fileID: 4318192751392447923, guid: aea2993f512271844bf46c4cd2eb270b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20501,6 +20544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1406851015
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20915,6 +20959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1419403302
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21937,6 +21982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1482061087
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22233,6 +22279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1505733589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23145,6 +23192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1535963134
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23694,6 +23742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1582303816
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24222,6 +24271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1598281313
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24787,6 +24837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1632094743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25395,6 +25446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1645755359
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -25899,6 +25951,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1681110036
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26350,6 +26403,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1720024731
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27101,6 +27155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1801710548
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28010,6 +28065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1854039441
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28163,6 +28219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &1916081553
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28724,7 +28781,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7408645021715533602, guid: 8bcfa523fc066834586d1ef4d7f68469, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8bcfa523fc066834586d1ef4d7f68469, type: 3}
 --- !u!1 &1958332111
 GameObject:
@@ -29626,6 +29686,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &2040904712
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29865,6 +29926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &2052819051
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30336,6 +30398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &2076740640
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30541,6 +30604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 0
+  damageCooldown: 2
 --- !u!61 &2115435832
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31162,7 +31226,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7408645021715533602, guid: 8bcfa523fc066834586d1ef4d7f68469, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 8bcfa523fc066834586d1ef4d7f68469, type: 3}
 --- !u!1001 &846539723982581762
 PrefabInstance:
