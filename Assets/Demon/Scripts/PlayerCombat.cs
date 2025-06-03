@@ -29,8 +29,8 @@ public class PlayerCombat : MonoBehaviour
     public GameObject fireballPrefab;
     public Transform fireballSpawnPoint;
     public float fireballSpeed = 10f;
-    public int fireballDamage = 40;
-    public float attackRate3 = 1.5f;
+    public int fireballDamage = 20;
+    public float attackRate3 = 5f;
 
     //Special Attack
     public int specialAttackDamage = 100;
