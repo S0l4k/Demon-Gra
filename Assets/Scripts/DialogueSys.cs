@@ -7,13 +7,14 @@ public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     public GameObject dialoguePanel;
-    public Image panelImage;  
+    public Image panelImage;
     public string[] lines;
     public Sprite[] speakerSprites;
     public float textSpeed;
     private int index;
+    private bool isTyping = false;
 
-    private Color[] speakerColors = { Color.gray, Color.red }; 
+    private Color[] speakerColors = { Color.gray, Color.red };
 
     void Start()
     {
@@ -43,7 +44,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (textComponent.text == lines[index])
+            if (!isTyping)
             {
                 NextLine();
             }
@@ -51,6 +52,7 @@ public class DialogueManager : MonoBehaviour
             {
                 StopAllCoroutines();
                 textComponent.text = lines[index];
+                isTyping = false;
             }
         }
     }
@@ -64,11 +66,14 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeLine()
     {
+        isTyping = true;
+        textComponent.text = "";
         foreach (char character in lines[index].ToCharArray())
         {
             textComponent.text += character;
             yield return new WaitForSecondsRealtime(textSpeed);
         }
+        isTyping = false;
     }
 
     void NextLine()
