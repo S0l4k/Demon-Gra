@@ -19,7 +19,8 @@ public class BasicEnemyController : MonoBehaviour
     [SerializeField]
     private Transform
          groundCheck,
-         wallCheck;
+         wallCheck,
+        attackPoint;
 
     [SerializeField] private LayerMask whatIsGround, whatIsPlayer;
 
@@ -200,8 +201,7 @@ public class BasicEnemyController : MonoBehaviour
         PlayAttackSound();
         aliveAnim.SetTrigger("Attack");
 
-
-        Vector2 attackPosition = alive.transform.position;
+        Vector2 attackPosition = attackPoint.position;
 
 
         Debug.DrawLine(attackPosition, attackPosition + (Vector2)alive.transform.right * attackRange, Color.red, 1f);
@@ -327,6 +327,13 @@ public class BasicEnemyController : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawLine(groundCheck.position, groundCheck.position + Vector3.down * groundCheckDistance);
         Gizmos.DrawLine(wallCheck.position, wallCheck.position + alive.transform.right * wallCheckDistance);
+        Gizmos.color = Color.yellow;
+
+        Gizmos.color = Color.yellow;
+        if (attackPoint != null)
+        {
+            Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        }
     }
     private void PlayAttackSound()
     {
@@ -352,4 +359,6 @@ public class BasicEnemyController : MonoBehaviour
             aliveAudiosource.PlayOneShot(dead);
         }
     }
+   
+
 }

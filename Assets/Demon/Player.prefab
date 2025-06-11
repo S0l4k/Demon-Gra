@@ -262,7 +262,7 @@ MonoBehaviour:
   fireballSpawnPoint: {fileID: 2616770646694437355}
   fireballSpeed: 10
   fireballDamage: 10
-  attackRate3: 1.5
+  attackRate3: 0.3
   specialAttackDamage: 100
   bloodExplosionPrefab: {fileID: 7980566795118097664, guid: 669721a7f538fca48b5c3df471965462, type: 3}
   audioSource: {fileID: 0}
