@@ -400,9 +400,9 @@ MonoBehaviour:
   attackCooldown: 2
   alive: {fileID: 3269800292374130966}
   player: {fileID: 0}
-  attack: {fileID: 8300000, guid: e54082c023b27814fa443ed005b58116, type: 3}
-  hurt: {fileID: 8300000, guid: 897eab23568d0284aa56b7465378ef83, type: 3}
-  dead: {fileID: 8300000, guid: be109d48bef876149b74ff3e02139b2b, type: 3}
+  attack: {fileID: 8300000, guid: a94561c3d4840c24592c08cdfd7ec444, type: 3}
+  hurt: {fileID: 8300000, guid: 95e4b3937082f88458c743149434e244, type: 3}
+  dead: {fileID: 8300000, guid: 35045a767f29f184ca354a30a2df7556, type: 3}
 --- !u!82 &6641467436563376654
 AudioSource:
   m_ObjectHideFlags: 0

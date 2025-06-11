@@ -33,18 +33,35 @@ public class BossWeapon : MonoBehaviour
     private Animator animator;
     private Rigidbody2D rb;
     private Collider2D bossCollider;
+    
+    [Header("Audio")]
+    public AudioClip meleeAttackClip;
+    public AudioClip special1Clip;
+    public AudioClip special2Clip;
+    private AudioSource audioSource;
+
 
     public GameObject[] platformsToBreak; 
     public float disappearTime = 10f;     
     void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
+
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         bossCollider = GetComponent<Collider2D>();
     }
+    private void PlaySound(AudioClip clip)
+    {
+        if (audioSource != null && clip != null)
+            audioSource.PlayOneShot(clip);
+    }
+
 
     public void Attack()
     {
+        PlaySound(meleeAttackClip);
+
         if (!canAttack) return;
         canAttack = false;
 
@@ -61,6 +78,8 @@ public class BossWeapon : MonoBehaviour
 
     public void SpecialAttack1()
     {
+        PlaySound(special1Clip);
+
         if (!canAttack) return;
         canAttack = false;
 
@@ -70,6 +89,8 @@ public class BossWeapon : MonoBehaviour
 
     public void SpecialAttack2()
     {
+        PlaySound(special2Clip);
+
         if (!canAttack) return;
         canAttack = false;
 

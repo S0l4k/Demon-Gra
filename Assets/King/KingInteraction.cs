@@ -8,7 +8,8 @@ public class KingInteraction : MonoBehaviour
     public float hugDuration = 2.5f;
     public GameObject redFlashPanel;
     public Animator kingAnimator;
-
+    public AudioClip deathClip;
+    private AudioSource audioSource;
     public TypewriterEffect bossDialog; // Podłącz tutaj swój komponent dialogowy
     public string deathDialogText = "I'm sorry, my subjects. I have failed you all.";
 
@@ -18,12 +19,17 @@ public class KingInteraction : MonoBehaviour
 
     private bool hasInteracted = false;
 
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (hasInteracted) return;
 
         if (collision.CompareTag("Fireball"))
         {
+            audioSource.PlayOneShot(deathClip);
             hasInteracted = true;
             StartCoroutine(HandleInteraction(collision.gameObject));
         }
