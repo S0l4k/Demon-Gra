@@ -93,6 +93,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5326163318276634217, guid: 4d7898bd5c920194bbfc778df2aa1953, type: 3}
+      propertyPath: dead
+      value: 
+      objectReference: {fileID: 8300000, guid: d27edabe4b6945243bc3af6cc96247cb, type: 3}
+    - target: {fileID: 5326163318276634217, guid: 4d7898bd5c920194bbfc778df2aa1953, type: 3}
+      propertyPath: hurt
+      value: 
+      objectReference: {fileID: 8300000, guid: 95e4b3937082f88458c743149434e244, type: 3}
+    - target: {fileID: 5326163318276634217, guid: 4d7898bd5c920194bbfc778df2aa1953, type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 8300000, guid: dc3446d590a261b4b9380b878f3ef921, type: 3}
+    - target: {fileID: 5326163318276634217, guid: 4d7898bd5c920194bbfc778df2aa1953, type: 3}
       propertyPath: arrowPrefab
       value: 
       objectReference: {fileID: 1104881836943312085, guid: fba54e404366f44468bcea74e2cf59cb, type: 3}

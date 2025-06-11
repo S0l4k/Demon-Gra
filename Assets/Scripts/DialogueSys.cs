@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
     public float textSpeed;
     private int index;
     private bool isTyping = false;
+    public GameObject audio;
 
     private Color[] speakerColors = { Color.gray, Color.red };
 
@@ -96,5 +97,6 @@ public class DialogueManager : MonoBehaviour
     {
         Time.timeScale = 1;
         dialoguePanel.SetActive(false);
+        audio.SetActive(true);
     }
 }

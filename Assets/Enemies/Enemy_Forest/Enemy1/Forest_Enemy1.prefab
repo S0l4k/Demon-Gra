@@ -208,7 +208,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0015001297, y: 0.023990065}
+  m_Offset: {x: -0.0015001297, y: -0.035971284}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -218,7 +218,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.3593643, y: 0.83277124}
+  m_Size: {x: 1.3593643, y: 0.9103682}
   m_EdgeRadius: 0
 --- !u!82 &4450354079726023459
 AudioSource:
@@ -400,9 +400,9 @@ MonoBehaviour:
   attackCooldown: 2
   alive: {fileID: 3269800292374130966}
   player: {fileID: 0}
-  attack: {fileID: 8300000, guid: e54082c023b27814fa443ed005b58116, type: 3}
-  hurt: {fileID: 8300000, guid: 897eab23568d0284aa56b7465378ef83, type: 3}
-  dead: {fileID: 8300000, guid: be109d48bef876149b74ff3e02139b2b, type: 3}
+  attack: {fileID: 8300000, guid: a94561c3d4840c24592c08cdfd7ec444, type: 3}
+  hurt: {fileID: 8300000, guid: 95e4b3937082f88458c743149434e244, type: 3}
+  dead: {fileID: 8300000, guid: 35045a767f29f184ca354a30a2df7556, type: 3}
 --- !u!82 &6641467436563376654
 AudioSource:
   m_ObjectHideFlags: 0
