@@ -62,12 +62,12 @@ public class BossHealth : MonoBehaviour
     {
         animator?.SetTrigger("Death");
         // np. animacja œmierci, efekty cz¹steczkowe itp.
-        Destroy(gameObject, 1f); // usuniêcie obiektu po 1s
+        Destroy(gameObject, 5f); // usuniêcie obiektu po 1s
         Invoke(nameof(LoadNextLevel), nextLevelDelay);
     }
 
     void LoadNextLevel()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(4);
     }
 }

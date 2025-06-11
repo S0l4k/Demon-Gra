@@ -1,6 +1,7 @@
-using System.Collections;
+Ôªøusing System.Collections;
 using UnityEngine;
-using UnityEngine.UI;  // do Image
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class KingInteraction : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class KingInteraction : MonoBehaviour
     public GameObject redFlashPanel;
     public Animator kingAnimator;
 
-    public TypewriterEffect bossDialog; // Pod≥πcz tutaj swÛj komponent dialogowy
+    public TypewriterEffect bossDialog; // Pod≈ÇƒÖcz tutaj sw√≥j komponent dialogowy
     public string deathDialogText = "I'm sorry, my subjects. I have failed you all.";
 
     public Image fadePanel;  // Czarny panel do fade out (Image z Canvas)
@@ -30,17 +31,17 @@ public class KingInteraction : MonoBehaviour
 
     private IEnumerator HandleInteraction(GameObject player)
     {
-        // Wy≥πcz ruch gracza
+        // Wy≈ÇƒÖcz ruch gracza
         var movement = player.GetComponent<PlayerController>();
         if (movement != null) movement.enabled = false;
 
         var rb = player.GetComponent<Rigidbody2D>();
         if (rb != null) rb.velocity = Vector2.zero;
 
-        // OdtwÛrz animacjÍ przytulenia krÛla
+        // Odtw√≥rz animacjƒô przytulenia kr√≥la
         if (kingAnimator != null) kingAnimator.SetTrigger("Hug");
 
-        // OdtwÛrz animacjÍ gracza
+        // Odtw√≥rz animacjƒô gracza
         Animator playerAnimator = player.GetComponent<Animator>();
         if (playerAnimator != null) playerAnimator.SetTrigger("Hug");
 
@@ -55,7 +56,7 @@ public class KingInteraction : MonoBehaviour
             redFlashPanel.SetActive(false);
         }
 
-        // Animacja úmierci krÛla
+        // Animacja ≈õmierci kr√≥la
         if (kingAnimator != null) kingAnimator.SetTrigger("Death");
 
         // Uruchom dialog bossa
@@ -76,7 +77,9 @@ public class KingInteraction : MonoBehaviour
             yield return StartCoroutine(FadeOut());
         }
 
-        // Opcjonalnie: po fade oucie moøna zrobiÊ coú dalej, np. za≥adowaÊ scenÍ
+        // Za≈Çaduj kolejnƒÖ scenƒô
+        SceneManager.LoadScene("End"); // ‚Üê zmie≈Ñ na nazwƒô twojej sceny
+
     }
 
     private IEnumerator FadeOut()

@@ -2250,6 +2250,10 @@ PrefabInstance:
       propertyPath: distanceThreshold
       value: 1.12
       objectReference: {fileID: 0}
+    - target: {fileID: 6421817622759794036, guid: fbb3d6b669e1ebc4ebabd7adc4294c66, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8620819715519575231, guid: fbb3d6b669e1ebc4ebabd7adc4294c66, type: 3}
       propertyPath: m_Name
       value: Cat
