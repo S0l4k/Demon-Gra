@@ -21,7 +21,7 @@ public class KingInteraction : MonoBehaviour
     {
         if (hasInteracted) return;
 
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Fireball"))
         {
             hasInteracted = true;
             StartCoroutine(HandleInteraction(collision.gameObject));

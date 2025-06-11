@@ -370,7 +370,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      licznik_0: 9034050035616262311
+      licznik_1: 6639208514921268208
+      licznik_10: 6343452209881132343
+      licznik_2: -1475722917712142510
+      licznik_3: 2672803713796921760
+      licznik_4: 1864932595312553915
+      licznik_5: 7582181881476576786
+      licznik_6: -8698407683388338727
+      licznik_7: -9204524748971657928
+      licznik_8: -9064392151252408327
+      licznik_9: 151444571950534366
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
