@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HurtSpikes : MonoBehaviour
 {
-    public int damage = 15;
+    public int damage = 100;
     public int spawn;
 
     private SpriteRenderer spriteRenderer;
@@ -35,20 +35,17 @@ public class HurtSpikes : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (spawn != 1) return;
+        if (!other.CompareTag("Player")) return;
 
-        if (collision.gameObject.CompareTag("Player") && !cooldownPlayers.Contains(collision.gameObject))
+        PlayerHealth playerHealth = other.GetComponentInParent<PlayerHealth>();
+
+        if (!cooldownPlayers.Contains(other.gameObject))
         {
-            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
-
-            if (playerHealth != null)
-            {
-                playerHealth.TakeDamage(damage);
-                cooldownPlayers.Add(collision.gameObject);
-                StartCoroutine(RemoveCooldown(collision.gameObject));
-            }
+            playerHealth.TakeDamage(damage);
+            cooldownPlayers.Add(other.gameObject);
+            StartCoroutine(RemoveCooldown(other.gameObject));
         }
     }
 

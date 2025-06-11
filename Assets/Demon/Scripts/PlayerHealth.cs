@@ -16,6 +16,7 @@ public class PlayerHealth : MonoBehaviour
     public AudioClip hurt;
     public AudioClip die;
     public AudioSource audioSource;
+
     private void Start()
     {
         currentHealth = maxHealth;
@@ -29,6 +30,8 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        Debug.Log("TakeDamage() wywo³ane. canMove: " + canMove + ", currentHealth: " + currentHealth);
+
         if (!canMove || currentHealth <= 0)
             return;
 
@@ -49,14 +52,13 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         PlayDeathSound();
-        canMove = false; 
+        canMove = false;
+
         if (playerController != null)
-        {
             playerController.SetCanMove(false);
-        }
 
         rb.velocity = Vector2.zero;
-        rb.simulated = false; 
+        rb.simulated = false;
         anim.SetTrigger("Die");
 
         StartCoroutine(PlayDeathAnimation());
@@ -75,6 +77,7 @@ public class PlayerHealth : MonoBehaviour
         yield return new WaitForSeconds(respawnTime);
 
         transform.position = respawnPoint;
+
         sprite.enabled = true;
         currentHealth = maxHealth;
         transform.localScale = Vector3.one;
@@ -84,8 +87,14 @@ public class PlayerHealth : MonoBehaviour
 
         canMove = true;
         if (playerController != null)
-        {
             playerController.SetCanMove(true);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.CompareTag("Respawn"))
+        {
+            respawnPoint = collider.transform.position;
         }
     }
 
@@ -97,16 +106,12 @@ public class PlayerHealth : MonoBehaviour
     public void PlayHurtSound()
     {
         if (audioSource != null && hurt != null)
-        {
             audioSource.PlayOneShot(hurt);
-        }
     }
 
     public void PlayDeathSound()
     {
         if (audioSource != null && die != null)
-        {
             audioSource.PlayOneShot(die);
-        }
     }
 }
