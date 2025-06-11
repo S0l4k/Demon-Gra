@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2950711967254509461}
   - component: {fileID: 2398127251407747894}
   - component: {fileID: 8199657162810645364}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fireball
   m_TagString: Fireball
   m_Icon: {fileID: 0}
@@ -131,6 +131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   lifetime: 1.5
+  catCollider: {fileID: 0}
 --- !u!58 &2398127251407747894
 CircleCollider2D:
   m_ObjectHideFlags: 0

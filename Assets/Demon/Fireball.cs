@@ -4,14 +4,22 @@ public class Fireball : MonoBehaviour
 {
     public int damage = 10;
     public float lifetime = 2f;
+    public Collider2D catCollider;
 
     void Start()
     {
+        if (catCollider != null)
+        {
+            Collider2D myCollider = GetComponent<Collider2D>();
+            Physics2D.IgnoreCollision(myCollider, catCollider);
+        }
+
         Destroy(gameObject, lifetime);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+     
         if (collision.collider.CompareTag("Enemy"))
         {
             
