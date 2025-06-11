@@ -64,6 +64,7 @@ public class BasicEnemyController : MonoBehaviour
     public AudioClip attack;
     public AudioClip hurt;
     public AudioClip dead;
+
     private void Start()
     {
         Transform aliveTransform = transform.Find("Alive");
