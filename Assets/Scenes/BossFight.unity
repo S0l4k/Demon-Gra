@@ -1064,6 +1064,7 @@ GameObject:
   - component: {fileID: 356124254}
   - component: {fileID: 356124255}
   - component: {fileID: 356124256}
+  - component: {fileID: 356124257}
   m_Layer: 7
   m_Name: Boss
   m_TagString: Enemy
@@ -1137,7 +1138,8 @@ Transform:
   m_LocalPosition: {x: 283.17, y: -1.21, z: 0}
   m_LocalScale: {x: 1.6253974, y: 1.6253974, z: 1.6253974}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 747760749}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &356124250
@@ -1286,6 +1288,9 @@ MonoBehaviour:
   numberOfRocks: 5
   minDelayBetweenSpawns: 0.1
   maxDelayBetweenSpawns: 0.3
+  groundImpactFXPrefab: {fileID: 1644562066118013955, guid: ae73c11f550debc4ba1e2530009c6e27, type: 3}
+  impactSpawnPoint: {fileID: 747760749}
+  impulseSource: {fileID: 356124257}
   platformsToBreak:
   - {fileID: 2068462753}
   - {fileID: 856292505}
@@ -1329,6 +1334,59 @@ MonoBehaviour:
   special2Range: 9.45
   moveSpeed: 2.5
   specialAttackCooldown: 5
+--- !u!114 &356124257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356124247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ImpulseDefinition:
+    m_ImpulseChannel: 1
+    m_ImpulseShape: 2
+    m_CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ImpulseDuration: 0.2
+    m_ImpulseType: 0
+    m_DissipationRate: 0.25
+    m_RawSignal: {fileID: 0}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_RepeatMode: 0
+    m_Randomize: 1
+    m_TimeEnvelope:
+      m_AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_AttackTime: 0
+      m_SustainTime: 0.2
+      m_DecayTime: 0.7
+      m_ScaleWithImpact: 1
+      m_HoldForever: 0
+    m_ImpactRadius: 100
+    m_DirectionMode: 0
+    m_DissipationMode: 2
+    m_DissipationDistance: 100
+    m_PropagationSpeed: 343
+  m_DefaultVelocity: {x: 0, y: -1, z: 0}
 --- !u!4 &356206898 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1348224568907613294, guid: 21783bac0a9019a45bfd53523bd258a6, type: 3}
@@ -1985,6 +2043,37 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2068462756}
   m_SourcePrefab: {fileID: 100100000, guid: c916b032c947ed94398a84fddbb2c250, type: 3}
+--- !u!1 &747760748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 747760749}
+  m_Layer: 7
+  m_Name: ImpactPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &747760749
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747760748}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.71, y: -1.093, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 356124249}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &839304041
 GameObject:
   m_ObjectHideFlags: 0
@@ -3068,6 +3157,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1627304856}
     m_Modifications:
+    - target: {fileID: 497156431120268359, guid: c916b032c947ed94398a84fddbb2c250, type: 3}
+      propertyPath: m_Size.y
+      value: 1.4668825
+      objectReference: {fileID: 0}
+    - target: {fileID: 497156431120268359, guid: c916b032c947ed94398a84fddbb2c250, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.3454317
+      objectReference: {fileID: 0}
     - target: {fileID: 1081569863411939225, guid: c916b032c947ed94398a84fddbb2c250, type: 3}
       propertyPath: m_Name
       value: Ground (100)

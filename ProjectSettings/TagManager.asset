@@ -55,3 +55,6 @@ TagManager:
   - name: Kret
     uniqueID: 3246387493
     locked: 0
+  - name: FX
+    uniqueID: 1635199071
+    locked: 0

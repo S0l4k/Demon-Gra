@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using Cinemachine;
 
 public class BossWeapon : MonoBehaviour
 {
@@ -24,6 +25,10 @@ public class BossWeapon : MonoBehaviour
     public int numberOfRocks = 5;
     public float minDelayBetweenSpawns = 0.1f;
     public float maxDelayBetweenSpawns = 0.3f;
+    public GameObject groundImpactFXPrefab;
+    public Transform impactSpawnPoint;
+    public CinemachineImpulseSource impulseSource;
+
 
     private Animator animator;
     private Rigidbody2D rb;
@@ -72,13 +77,22 @@ public class BossWeapon : MonoBehaviour
 
         animator.SetTrigger("Special2");
 
-       
+        // WYWO£ANIE SHAKE
+        TriggerShake();
+
         StartCoroutine(SpawnFallingRocks());
+    }
+    public void TriggerShake()
+    {
+        if (impulseSource != null)
+        {
+            impulseSource.GenerateImpulse();
+        }
     }
 
 
 
-   
+
     public void OnUndergroundAnimationFinished()
     {
         Debug.Log("Boss koñczy animacjê schowania siê. Ruszam w dó³...");
@@ -175,8 +189,13 @@ public class BossWeapon : MonoBehaviour
         float spawnDuration = 3f;
         int rocksPerWave = 3;
         float waveInterval = 0.5f;
+        if (groundImpactFXPrefab != null && impactSpawnPoint != null)
+        {
+            Instantiate(groundImpactFXPrefab, impactSpawnPoint.position, Quaternion.identity);
+        }
 
-        
+
+
         Platform chosenPlatform = null;
 
         if (platformsToBreak.Length > 0)

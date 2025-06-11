@@ -245,8 +245,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 2624626237482674192}
+  bloodFull: 0
+  bloodResource: 0
+  maxBloodResource: 100
   attackPoint: {fileID: 8748105964229931032}
-  attackRange: 0.5
+  attackRange: 0.75
+  specialAttackRange: 5
   enemyLayers:
     serializedVersion: 2
     m_Bits: 128
@@ -259,6 +263,12 @@ MonoBehaviour:
   fireballSpeed: 10
   fireballDamage: 10
   attackRate3: 1.5
+  specialAttackDamage: 100
+  bloodExplosionPrefab: {fileID: 7980566795118097664, guid: 669721a7f538fca48b5c3df471965462, type: 3}
+  audioSource: {fileID: 0}
+  attack1: {fileID: 0}
+  attack2: {fileID: 0}
+  attack3: {fileID: 0}
 --- !u!114 &48237224916481069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,6 +287,9 @@ MonoBehaviour:
   respawnPoint: {x: 40.26, y: -2.47}
   respawnTime: 3
   rb: {fileID: 0}
+  hurt: {fileID: 0}
+  die: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!1 &5389809804152447529
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +346,7 @@ Transform:
   m_GameObject: {fileID: 5458649649789700692}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.03, y: -0.17, z: 0}
+  m_LocalPosition: {x: 1.44, y: -0.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
