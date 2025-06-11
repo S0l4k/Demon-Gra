@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
+    x: 1920
     y: 43
     width: 1920
     height: 989
@@ -347,7 +347,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: 1920
     y: 73
     width: 863
     height: 464
@@ -877,9 +877,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 245.20587, y: 0.92531896, z: -0.18045436}
+    m_Target: {x: 49.98236, y: 24.87833, z: -0.23546237}
     speed: 2
-    m_Value: {x: 245.20587, y: 0.92531896, z: -0.18045436}
+    m_Value: {x: 49.98236, y: 24.87833, z: -0.23546237}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -929,9 +929,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 28.045431
+    m_Target: 33.542362
     speed: 2
-    m_Value: 28.045431
+    m_Value: 33.542362
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1089,7 +1089,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: 1920
     y: 558
     width: 863
     height: 433
@@ -1242,7 +1242,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 282550
+  m_LastSelectedObjectID: 47748
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1264,7 +1264,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 864
+    x: 2784
     y: 73
     width: 217
     height: 918
@@ -1282,9 +1282,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: c2faffff
+      m_SelectedIDs: 3ee10000
+      m_LastClickedID: 57662
+      m_ExpandedIDs: 9e5cffff8ecdffff96cdffff2ed0ffff76d0ffffced0ffff2ad1ffffd8d3ffffb8d8ffff9cd9ffff62e8ffff64e9ffffc2faffff048b00008c8b0000088d0000448d00005e8d0000b28d0000fa8d00005a8e0000b0a000004ea400004aa9000010ab000008b3000070b40000d2b400003cbb0000c2e000003ee10000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1330,7 +1330,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1083
+    x: 3003
     y: 73
     width: 415
     height: 918
@@ -1356,7 +1356,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Envinment/Level2
+    - Assets/Enemies
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1366,16 +1366,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Envinment/Level2
+  - Assets/Enemies
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\Ki\u0144\\Documents\\GitKraken\\Demon-Gra"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ee960000
-    m_LastClickedID: 38638
-    m_ExpandedIDs: 000000002e960000b296000000ca9a3bffffff7f
+    m_SelectedIDs: b0960000
+    m_LastClickedID: 38576
+    m_ExpandedIDs: 000000002e960000b0960000b296000084bc000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1432,8 +1432,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 78b30000da910000de0c0100e2ee000002990000249900009031ffffb2a80000e292000022970000629b00001e9600003a8c00002a8b00002e8b00009497000096970000b62f0300a61a0300e2840300588b0300a6a30300aaa30300
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: 78b30000da910000de0c0100e2ee000002990000249900009031ffffb2a80000e292000022970000629b00001e9600003a8c00002a8b00002e8b00009497000096970000b62f0300a61a0300e2840300588b0300a6a30300aaa3030098bc0000acbc00009492000022f40000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1483,7 +1483,7 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1500
+    x: 3420
     y: 73
     width: 419
     height: 918
