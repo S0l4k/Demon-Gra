@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5169806546873578301}
   - component: {fileID: 5694946648302022494}
   - component: {fileID: 280741818400478440}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: SpikeChange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -148,3 +148,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   spawn: 1
+  damageCooldown: 2
