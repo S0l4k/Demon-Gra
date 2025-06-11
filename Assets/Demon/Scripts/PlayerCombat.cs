@@ -44,11 +44,14 @@ public class PlayerCombat : MonoBehaviour
     public AudioClip attack1;
     public AudioClip attack2;
     public AudioClip attack3;
- 
+
+    private PlayerResource playerResource;
+
 
     private void Start()
     {
         bloodFull = false;
+        playerResource = GetComponent<PlayerResource>();
         anim = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
     }
@@ -74,10 +77,10 @@ public class PlayerCombat : MonoBehaviour
             nextAttackTime3 = Time.time + 1f / attackRate3;
         }
 
-        if(bloodFull==true && Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.X) && playerResource.CanUseSpecialAttack())
         {
             SpecialAttack();
-            bloodResource = 0;
+            playerResource.UseSpecialAttack();
         }
     }
 
