@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerResource : MonoBehaviour
 {
     public int currentResource = 0;
-    public int maxResource = 10;
+    public int maxResource = 8;
 
     public void AddResource(int amount)
     {
@@ -16,5 +16,23 @@ public class PlayerResource : MonoBehaviour
     public bool CanPickup(int amount)
     {
         return currentResource + amount <= maxResource;
+    }
+
+    public bool CanUseSpecialAttack()
+    {
+        return currentResource >= maxResource;
+    }
+
+    public void UseSpecialAttack()
+    {
+        if (CanUseSpecialAttack())
+        {
+            currentResource = 0;
+            Debug.Log("U¿yto specjalnego ataku! Zasób zresetowany do 0.");
+        }
+        else
+        {
+            Debug.Log("Za ma³o zasobów na specjalny atak!");
+        }
     }
 }

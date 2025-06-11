@@ -121,7 +121,11 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
+<<<<<<< HEAD
   controlID: 45
+=======
+  controlID: 86
+>>>>>>> origin/Kinga
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -146,7 +150,11 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
+<<<<<<< HEAD
   controlID: 18
+=======
+  controlID: 28
+>>>>>>> origin/Kinga
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,11 +172,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 909
     height: 490
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 12}
+=======
+    width: 864
+    height: 485
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 13}
+>>>>>>> origin/Kinga
   m_Panes:
   - {fileID: 12}
   - {fileID: 13}
@@ -220,10 +236,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 909
     y: 0
+<<<<<<< HEAD
     width: 306
     height: 947
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
+=======
+    width: 219
+    height: 939
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> origin/Kinga
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -273,9 +296,15 @@ MonoBehaviour:
     x: 1500
     y: 0
     width: 420
+<<<<<<< HEAD
     height: 947
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
+=======
+    height: 939
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> origin/Kinga
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -832,9 +861,15 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -37.59146, y: 0.7501838, z: -0.0015760525}
     speed: 2
     m_Value: {x: -37.59146, y: 0.7501838, z: -0.0015760525}
+=======
+    m_Target: {x: 33.139374, y: 9.417046, z: -0.22390169}
+    speed: 2
+    m_Value: {x: 32.862946, y: 10.262216, z: -0.23781839}
+>>>>>>> origin/Kinga
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -884,9 +919,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 10.15761
     speed: 2
     m_Value: 10.15761
+=======
+    m_Target: 29.534327
+    speed: 2
+    m_Value: 30.925997
+>>>>>>> origin/Kinga
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1141,7 +1182,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -1152,20 +1193,34 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 908
       height: 415
     m_Scale: {x: 0.38425925, y: 0.38425925}
     m_Translation: {x: 454, y: 207.5}
+=======
+      width: 863
+      height: 412
+    m_Scale: {x: 0.38835344, y: 0.38835344}
+    m_Translation: {x: 431.50003, y: 202.28914}
+>>>>>>> origin/Kinga
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -1181.494
       y: -540
       width: 2362.988
       height: 1080
+=======
+      x: -1111.1013
+      y: -520.8893
+      width: 2222.2026
+      height: 1060.8893
+>>>>>>> origin/Kinga
     m_MinimalGUI: 1
   m_defaultScale: 0.38425925
   m_LastWindowPixelSize: {x: 908, y: 436}
@@ -1293,7 +1348,11 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
+<<<<<<< HEAD
   m_LastSelectedObjectID: 84572
+=======
+  m_LastSelectedObjectID: -68360
+>>>>>>> origin/Kinga
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1333,9 +1392,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: b68b0000
       m_LastClickedID: 0
       m_ExpandedIDs: 82a1ffff84a1fffff2f3fffffaf3ffff5af5ffff06f6ffff1cf9ffff3c9100009e91000026960000
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: c2faffffd68a00008e8b0000fa8b00002c8e0000f89000002291000080910000
+>>>>>>> origin/Kinga
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: GameObject
@@ -1407,7 +1472,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Demon
+=======
+    - Assets/Demon/Scripts
+>>>>>>> origin/Kinga
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1417,16 +1486,26 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Demon
+=======
+  - Assets/Demon/Scripts
+>>>>>>> origin/Kinga
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\lukas\Documents\GitKraken\Demon Gra\Demon Gra
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 5a8f0000
     m_LastClickedID: 36698
     m_ExpandedIDs: 00000000428f0000448f0000468f0000488f00004a8f00004c8f00004e8f0000508f0000528f0000548f0000568f0000588f00005a8f00005c8f00003290000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 22970000
+    m_LastClickedID: 38690
+    m_ExpandedIDs: 000000004a9600004c9600004e960000cc96000000ca9a3bffffff7f
+>>>>>>> origin/Kinga
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1455,7 +1534,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000428f0000448f0000468f0000488f00004a8f00004c8f00004e8f0000508f0000528f0000548f0000568f0000588f00005a8f00005c8f0000
+=======
+    m_ExpandedIDs: 000000004a9600004c9600004e960000
+>>>>>>> origin/Kinga
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1484,7 +1567,11 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
+<<<<<<< HEAD
     m_ExpandedInstanceIDs: 78b30000da910000de0c0100e2ee000002990000249900009031ffffb2a80000e292000022970000629b00001e9600003a8c00000eac0000000000008cae00009aba00009e9b0000b49b0000
+=======
+    m_ExpandedInstanceIDs: 78b30000da910000de0c0100e2ee000002990000249900009031ffffb2a80000e292000022970000629b00001e9600003a8c00002a8b00002e8b00009497000096970000b62f0300a61a0300e2840300588b0300a6a30300aaa3030098bc0000acbc00009492000022f4000028ee0000
+>>>>>>> origin/Kinga
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1556,7 +1643,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 3022
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
