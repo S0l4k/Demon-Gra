@@ -2817,18 +2817,17 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1831655405}
   panelImage: {fileID: 1831655406}
   lines:
-  - "*ZIEW* Jacy ci g\xF3rnicy s\u0105 \u017Ca\u0142o\u015Bni, powoli nudzi mi si\u0119
-    odrywanie im n\xF3g."
-  - "M\xF3wi\u0142em wiele razy, \u017Ce szukanie rozrywki w takim miejscu nie jest
-    najlepszym pomys\u0142em. Ci ludzie nawet nie zaznali wojny, nic dziwnego, \u017Ce
-    jeden dosta\u0142 zawa\u0142u na tw\xF3j widok"
-  - "To akurat by\u0142a jedna z naj\u015Bmieszniejszych sytuacji, jakie si\u0119
-    tu wydarzy\u0142y, heh"
-  - "Wracajmy ju\u017C do piek\u0142a, nic tu po nas."
-  - "A co je\u015Bli..."
-  - "NIE! Wykluczone, nie mo\u017Cemy wyj\u015Bc z kopalni, Mefisto b\u0119dzie w\u015Bciek\u0142y!"
-  - "Ale przynajmniej b\u0119dzie \u015Bmiesznie..."
-  - "No dobra, nam\xF3wi\u0142e\u015B"
+  - "YAWN These miners are pathetic\u2026 I'm starting to get bored tearing their
+    legs off.         "
+  - "I\u2019ve told you many times\u2014looking for entertainment in a place like
+    this isn\u2019t the best idea. These people haven\u2019t even seen war; no wonder
+    one of them had a heart attack just from seeing you."
+  - That was actually one of the funniest things that happened around here, heh.
+  - Let's go back to Hell, there's nothing left for us here.
+  - 'But what if... '
+  - "NO! Out of the question\u2014we can't leave the mine, Mephisto will be furious! "
+  - "But at least it\u2019ll be funny... "
+  - 'Alright, you talked me into it.       '
   speakerSprites:
   - {fileID: 21300000, guid: 7f4a56a823957a9479335f5e2b666e13, type: 3}
   - {fileID: 21300000, guid: 9ecd3643d14e70b48afad279970e3fb9, type: 3}
@@ -5730,7 +5729,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -889138335
-  m_SortingLayer: 2
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 5865092851521269377, guid: 0523fe4522cfefe489f2420d95edddd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -9916,7 +9915,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 230842029
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 572852018423387665, guid: 466faf66e1f932245a046825a7f10ed3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -19169,7 +19168,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 230842029
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 572852018423387665, guid: 466faf66e1f932245a046825a7f10ed3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -23225,7 +23224,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 230842029
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 572852018423387665, guid: 466faf66e1f932245a046825a7f10ed3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -29249,8 +29248,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 860c90a6006e63049945e6cd87a80ff1, type: 2}
+  m_sharedMaterial: {fileID: -971167707358086756, guid: 860c90a6006e63049945e6cd87a80ff1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -29274,10 +29273,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -29819,7 +29818,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 230842029
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 572852018423387665, guid: 466faf66e1f932245a046825a7f10ed3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
