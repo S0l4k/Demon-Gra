@@ -5,7 +5,7 @@ using UnityEngine;
 public class HurtSpikes : MonoBehaviour
 {
     public int damage = 15;
-    public int spawn = 1;
+    public int spawn;
 
     private SpriteRenderer spriteRenderer;
     private Collider2D col;
@@ -29,7 +29,10 @@ public class HurtSpikes : MonoBehaviour
         originalColor = spriteRenderer.color;
         fadedColor = new Color(originalColor.r * 0.5f, originalColor.g * 0.5f, originalColor.b * 0.5f, 0.5f);
 
-        StartCoroutine(StateCycle());
+        if (spawn == 1)
+        {
+            StartCoroutine(StateCycle());
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
