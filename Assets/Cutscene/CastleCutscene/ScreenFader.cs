@@ -42,7 +42,7 @@ public class ScreenFader : MonoBehaviour
             SceneManager.LoadScene(nextSceneName);
         }
     }
-    public void FadeInNoArgs() // ← do użycia w Timeline
+    public void FadeInNoArgs() 
     {
         StartFadeIn(1f);
     }

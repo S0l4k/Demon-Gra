@@ -13,16 +13,20 @@ public class BossHealth : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
+    public float nextLevelDelay = 3f;
+    public string nextSceneName;
 
-    public float nextLevelDelay = 3f; // <- po ilu sekundach przejœæ dalej
-    public string nextSceneName; // <- nazwa sceny z kolejnym poziomem
+    [Header("Audio")]
+    public AudioClip hurtClip;
+    public AudioClip deathClip;
+    private AudioSource audioSource;
 
     void Start()
     {
         animator = GetComponentInParent<Animator>();
         currentHealth = health;
         spriteRenderer = GetComponent<SpriteRenderer>();
-       
+        audioSource = GetComponent<AudioSource>();
 
         if (healthBar != null)
         {
@@ -39,6 +43,8 @@ public class BossHealth : MonoBehaviour
         if (healthBar != null)
             healthBar.value = currentHealth;
 
+        PlaySound(hurtClip);
+
         if (!isEnraged && currentHealth <= enragedThreshold)
         {
             isEnraged = true;
@@ -54,20 +60,29 @@ public class BossHealth : MonoBehaviour
     void BecomeEnraged()
     {
         Debug.Log("Boss is now enraged!");
-        if (spriteRenderer != null) ;
-           
+        // Dodaj inne efekty, np. zmianê koloru, przyspieszenie animacji itd.
     }
 
     void Die()
     {
         animator?.SetTrigger("Death");
-        // np. animacja œmierci, efekty cz¹steczkowe itp.
-        Destroy(gameObject, 1f); // usuniêcie obiektu po 1s
+
+        PlaySound(deathClip);
+
+        Destroy(gameObject, 5f);
         Invoke(nameof(LoadNextLevel), nextLevelDelay);
     }
 
     void LoadNextLevel()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(nextSceneName); // u¿ycie nazwy zamiast indeksu
+    }
+
+    void PlaySound(AudioClip clip)
+    {
+        if (audioSource != null && clip != null)
+        {
+            audioSource.PlayOneShot(clip);
+        }
     }
 }

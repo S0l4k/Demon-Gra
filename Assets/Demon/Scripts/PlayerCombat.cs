@@ -34,7 +34,9 @@ public class PlayerCombat : MonoBehaviour
 
     //Special Attack
     public int specialAttackDamage = 100;
-    
+    public GameObject bloodExplosionPrefab;
+
+
 
     private float nextAttackTime1 = 0f;
     private float nextAttackTime2 = 0f;
@@ -111,8 +113,16 @@ public class PlayerCombat : MonoBehaviour
     {
         Debug.Log("specialattack");
         anim.SetTrigger("SpecialAttack");
+
+        
+        if (bloodExplosionPrefab != null)
+        {
+            Instantiate(bloodExplosionPrefab, transform.position, Quaternion.identity);
+        }
+
         DealSpecialDamage(specialAttackDamage);
     }
+
 
     private void DealBasicDamage(int damage)
     {

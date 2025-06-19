@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Cat
+  - Fireball
   layers:
   - Default
   - TransparentFX
@@ -17,9 +18,9 @@ TagManager:
   - Enemy
   - Damagable
   - Player
-  - 
-  - 
-  - 
+  - Cat
+  - Fireball
+  - Reasurce
   - 
   - 
   - 
@@ -46,12 +47,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Hidden
-    uniqueID: 230842029
-    locked: 0
   - name: Enemy
     uniqueID: 3405828961
     locked: 0
+  - name: Hidden
+    uniqueID: 230842029
+    locked: 0
   - name: Kret
     uniqueID: 3246387493
+    locked: 0
+  - name: FX
+    uniqueID: 1635199071
     locked: 0
